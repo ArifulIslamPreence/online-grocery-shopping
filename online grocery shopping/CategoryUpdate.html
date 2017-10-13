@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background:#ECF0F1;text-align:center;}
+{box-sizing:border-box}
+
+
+body {font-family: Verdana,sans-serif;}
+
+.mySlides {display:none}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 40px;
+	font-weight: bold;
+	color: red;
+}
+input[type=text], select {
+    width: 25%;
+	font-weight: bold;
+	background-color: #ECF0F1;
+    padding: 10px 15px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 10%;
+    background-color: orange;
+    color:solid black;
+	font-weight: bold;
+	font-size: 15px;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border:2px solid red;
+    border-radius: 8px;
+    cursor: pointer;
+}		
+.active {
+  background-color: #717171;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) {
+  .text {font-size: 11px}
+}
+
+/*Dropdown and nevigator Header and copyright footer*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue
+}
+
+li {
+    float: left;
+	border-right:1px solid black;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: red;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom: 0px; 
+       width: 100%;
+	   font-family: Times New Roman;
+} 
+ 
+.button {
+    background-color: red;
+    border:0.5px solid black;
+    border-radius: 4px;
+    color: white;
+    padding: 5px 25px;
+    text-align: bottom ;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+	 transition-duration: 0.4s;
+}
+div {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 17px;
+}
+
+</style>
+</head>
+
+<body>
+<form id="CategoryUpdate" action="CategoryUpdate.php" method="post"> 
+<ul>
+  <li><a href="wellcome.html">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Offers</a>
+    <div class="dropdown-content">
+      <a href="#">Grocery</a>
+      <a href="#">Cosmetics</a>
+      <a href="#">Toys</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Payment Methods</a>
+    <div class="dropdown-content">
+      <a href="#">Cash On Delivery</a>
+      <a href="#">BKash</a>
+      <a href="#">Credit Card</a>
+    </div>
+  </li>
+  <li><a href="#contact">Contacts</a></li>
+   <li style="float:right"><a class="active" href="wellcome.html">Log Out</a></li>
+  <li style="float:right"><a class="active" href="AdminLogin.html">Admin login</a></li>
+  
+</ul>
+<br>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+});
+</script>
+</head>
+<div>
+<h1>Category Update</h1>
+<p>Type the category name you want to insert.</p>
+<input type="text" name="CategoryName" placeholder="Certain Category Name..."> <br><br>
+
+<input type="submit" name="button" value="Insert">
+
+</form>
+</div>	
+<br><br><br>
+
+<div class="footer"> © All Rights Reserved by PREETUZA</div>
+
+</body>
+</html> 

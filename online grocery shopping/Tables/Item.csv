@@ -1,0 +1,29 @@
+Id,Name,Price,Unit,Category_Id
+1,rice miniket,48,Kg,2
+2,potato,20,Kg,2
+3,eggplant,30,Kg,2
+4,egg,100,Dozen,2
+5,rui fish,190,Kg,2
+6,katla fish,150,Kg,2
+7,hilsha fis,500,Kg,2
+8,beef,450,Kg,2
+9,mutton,600,Kg,2
+10,chicken,150,Kg,2
+11,barbe doll,650,Piece,3
+12,lego set,2500,Piece,3
+13,batman set,650,Piece,3
+14,soap,50,piece,3
+15,rc copter,1100,Piece,3
+16,mini army,850,Piece,3
+17,teddy bear,350,Piece,3
+18,pirates,900,Piece,3
+19,soap,50,Piece,1
+20,shampoo,200,Piece,1
+21,conditioner,350,Piece,1
+22,hair oil,100,Piece,1
+23,face wash,150,Piece,1
+24,body lotion,250,Piece,1
+25,cream,250,Piece,1
+26,perfume,500,Piece,1
+27,trimmer,500,Piece,1
+28,makeup box,500,Piece,1

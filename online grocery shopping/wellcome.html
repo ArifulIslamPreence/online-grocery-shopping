@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {background:#ECF0F1;text-align:center;}
+{box-sizing:border-box}
+
+body {font-family: Verdana,sans-serif;}
+
+.mySlides {display:none}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 40px;
+	font-weight: bold;
+	color: red;
+}
+		
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) {
+  .text {font-size: 11px}
+}
+
+/*Dropdown and nevigator Header and copyright footer*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue
+}
+
+li {
+    float: left;
+	border-right:1px solid black;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: red;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom: 0px; 
+       width: 100%;
+	   font-family: Times New Roman;
+} 
+ 
+.button {
+    background-color: red;
+    border:0.5px solid black;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+</head>
+
+<body>
+<ul>
+  <li><a href="wellcome.html">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Offers</a>
+    <div class="dropdown-content">
+      <a href="#">Grocery</a>
+      <a href="#">Cosmetics</a>
+      <a href="#">Toys</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Payment Methods</a>
+    <div class="dropdown-content">
+      <a href="#">Cash On Delivery</a>
+      <a href="#">BKash</a>
+      <a href="#">Credit Card</a>
+    </div>
+  </li>
+  <li><a href="#contact">Contacts</a></li>
+   <li style="float:right"><a class="active" href="wellcome.html">Log Out</a></li>
+  <li style="float:right"><a class="active" href="AdminLogin.html">Admin login</a></li>
+  
+</ul>
+
+<br><br>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="grocery.jpg" style="width:100%">
+  <div class="text">Fresh Groceries</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="cosmetics.jpg" style="width:100%">
+  <div class="text">Best cosmetics</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="toys.jpg" style="width:100%">
+  <div class="text">Lovely Toys</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+<br>
+
+<h1>Welcome to The Largest Online Shopping Center </h1>
+<br><br>
+
+<p>To start shopping pls sign up....</p>
+<a href="UserSignup.html">
+<button class="button button1">Sign Up</button>
+</a>
+<br><br>
+<p>Already have an account? Then...</p>
+<a href="UserLogin.html">
+<button class="button button2">Sign In</button>
+ </a>
+
+<br><br><br>
+
+<div class="footer"> © All Rights Reserved by PREETUZA</div>
+
+</body>
+</html> 
